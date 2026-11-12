@@ -1,0 +1,23 @@
+*.iml
+.gradle/
+/local.properties
+.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+/app/build
+supabase/.temp/
+supabase/.env
+.env
+
+# bot shared secret (also stored in Supabase secrets + bot_runtime)
+.bot_secret_tmp
+
+# local Groq key for scripts/ai_usage.py
+.groq_key
+
+# real bot_runtime values (secret + project url)
+supabase/bot_runtime.local.sql

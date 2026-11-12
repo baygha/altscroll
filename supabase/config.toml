@@ -1,0 +1,12 @@
+project_id = "altscroll"
+
+[functions.moderate-post]
+verify_jwt = true
+
+[functions.bot-agent]
+# Called by pg_cron and a database trigger, not by the app. Authenticates
+# callers with the x-bot-secret header instead of a user JWT.
+verify_jwt = false
+
+[functions.transcribe]
+verify_jwt = true
